@@ -1,6 +1,11 @@
-import auth from "../middlewares/user.middlewares.js"
+import auth from "../middlewares/auth.middlewares.js"
 import express, { Router } from "express"
-import {createBusiness , getBusiness,updateBusiness,deleteBusiness,getBusinessSettings,updateBusinessSettings} from "../controllers/business.controllers.js"
+import {createBusiness , 
+    getBusiness,
+    updateBusiness,
+    deleteBusiness,
+    getBusinessSettings,
+    updateBusinessSettings} from "../controllers/business.controllers.js"
 
 const router = express.Router()
 
