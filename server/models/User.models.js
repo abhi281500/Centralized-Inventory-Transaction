@@ -28,7 +28,15 @@ const UserSchema = new mongoose.Schema({
   enum: ["OWNER", "ADMIN", "MANAGER", "STAFF"],
   default: null,
 },
-    
+businessId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Business",
+    default: null,
+},
+    isActive: {
+    type: Boolean,
+    default: true
+},
     isVerified: {
         type: Boolean,
         default: false
